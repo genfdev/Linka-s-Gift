@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1>Today is Promesse's birthday 🎉🎂</h1>
+      <img id="bff-img" src="WhatsApp Image 2023-10-16 at 19.10.34.jpeg" />
+      <h2 id="bday-age">24 years old</h2>
+      <h4 id="bday-date">28.11.1999</h4>
+    </div>
+    <div class="gift-section">
+      <h2 class="gift-title">Here's how happy I am for you today 🥳</h2>
+      <h3 class="gift-hint">(Tap The gifts to open them)</h3>
+      <div
+        class="gift-img"
+        id="gift-img-happy"
+        onclick="toggleActive(this)"
+      ></div>
+    </div>
+    <div class="gift-section">
+      <h2 class="gift-title">
+        How i feel when i miss and you don't pick up my calls😪
+      </h2>
+      <div
+        class="gift-img"
+        id="gift-img-hot"
+        onclick="toggleActive(this)"
+      ></div>
+    </div>
+    <div class="gift-section">
+      <h2 class="gift-title">
+        I hope your birthday is as special as you are 💛
+      </h2>
+      <div
+        class="gift-img"
+        id="gift-img-genius"
+        onclick="toggleActive(this)"
+      ></div>
+    </div>
+    <div class="gift-section">
+      <h2 class="gift-title">
+        Wishing you a day filled with happiness and a year filled with joy🥰
+      </h2>
+      <div
+        class="gift-img"
+        id="gift-img-badass"
+        onclick="toggleActive(this)"
+      ></div>
+    </div>
+    <div class="gift-section">
+      <h2 class="gift-title">This one's for you Sis🥂</h2>
+      <div
+        class="gift-img"
+        id="gift-img-cheers"
+        onclick="toggleActive(this)"
+      ></div>
+    </div>
+    <script>
+      function toggleActive(element) {
+        element.classList.toggle("active");
+      }
+    </script>
+    <p>
+      <a href="https://www.instagram.com/franc_kgaby" onclick="openLink(event)"
+        >FranckDev &copy;2023</a
+      >
+    </p>
+    <script>
+      function openLink(event) {
+        event.preventDefault();
+        window.open(event.target.href, "_blank");
+      }
+    </script>
+  </body>
+</html>
